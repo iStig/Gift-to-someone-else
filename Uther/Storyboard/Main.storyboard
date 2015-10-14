@@ -4,7 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Message Delegate-->
@@ -174,36 +174,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4Xt-SE-kV1">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UtherAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="65D-Yo-cIo">
-                                <rect key="frame" x="250" y="175" width="100" height="100"/>
+                                <rect key="frame" x="480" y="320" width="100" height="100"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="YJ0-VR-fH6"/>
                                     <constraint firstAttribute="width" secondItem="65D-Yo-cIo" secondAttribute="height" id="msR-BB-Ypf"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2b-E2-3Yf" customClass="FBShimmeringView">
+                                <rect key="frame" x="20" y="100" width="560" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IOv-Kk-ZLn"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4Xt-SE-kV1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="65D-Yo-cIo" firstAttribute="centerY" secondItem="4Xt-SE-kV1" secondAttribute="centerY" multiplier="0.75" id="Ku9-Nl-2RE"/>
+                            <constraint firstItem="f2b-E2-3Yf" firstAttribute="top" secondItem="4Xt-SE-kV1" secondAttribute="top" constant="100" id="7vc-C9-xSE"/>
+                            <constraint firstItem="4Xt-SE-kV1" firstAttribute="top" secondItem="f2b-E2-3Yf" secondAttribute="bottom" constant="-150" id="B0L-EI-MnS"/>
+                            <constraint firstItem="65D-Yo-cIo" firstAttribute="leading" secondItem="4Xt-SE-kV1" secondAttribute="trailing" constant="-120" id="CWn-4J-3bP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="65D-Yo-cIo" secondAttribute="trailing" id="EZD-mI-Wn2"/>
+                            <constraint firstItem="65D-Yo-cIo" firstAttribute="leading" secondItem="4Xt-SE-kV1" secondAttribute="trailing" constant="-120" id="IbV-6I-1rE"/>
                             <constraint firstItem="4Xt-SE-kV1" firstAttribute="top" secondItem="qvS-O3-9Rh" secondAttribute="top" id="Qcm-hU-B92"/>
                             <constraint firstItem="5rW-y2-avJ" firstAttribute="top" secondItem="4Xt-SE-kV1" secondAttribute="bottom" id="VQA-oe-BE3"/>
                             <constraint firstAttribute="trailing" secondItem="4Xt-SE-kV1" secondAttribute="trailing" id="bKM-Yy-z1d"/>
+                            <constraint firstItem="65D-Yo-cIo" firstAttribute="top" secondItem="0Qm-rF-BJy" secondAttribute="bottom" constant="300" id="cWi-61-Pct"/>
+                            <constraint firstItem="f2b-E2-3Yf" firstAttribute="leading" secondItem="qvS-O3-9Rh" secondAttribute="leadingMargin" id="j6a-cr-vGf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f2b-E2-3Yf" secondAttribute="trailing" id="lF7-qB-mOT"/>
                             <constraint firstItem="4Xt-SE-kV1" firstAttribute="leading" secondItem="qvS-O3-9Rh" secondAttribute="leading" id="m6t-4c-n17"/>
                             <constraint firstItem="65D-Yo-cIo" firstAttribute="width" secondItem="65D-Yo-cIo" secondAttribute="height" id="pzS-lI-bds"/>
-                            <constraint firstItem="65D-Yo-cIo" firstAttribute="centerX" secondItem="4Xt-SE-kV1" secondAttribute="centerX" id="wMB-EW-M9o"/>
+                            <constraint firstItem="4Xt-SE-kV1" firstAttribute="top" secondItem="65D-Yo-cIo" secondAttribute="bottom" constant="-438" id="xRr-lf-6Fn"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xRr-lf-6Fn"/>
+                                <exclude reference="CWn-4J-3bP"/>
+                                <exclude reference="IbV-6I-1rE"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UC4-sW-7ft" appends="YES" id="AYr-py-6F8"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="avatar" destination="65D-Yo-cIo" id="uLs-Gd-y1z"/>
+                        <outlet property="shimmer" destination="f2b-E2-3Yf" id="eRs-yE-igW"/>
+                        <outlet property="starBackground" destination="4Xt-SE-kV1" id="E3b-ji-3vU"/>
+                        <outlet property="tapGesture" destination="UC4-sW-7ft" id="rEh-oG-PzN"/>
+                        <outlet property="welcome" destination="iIG-CX-J1R" id="xGO-ad-CSf"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="show_main" id="zJ8-B2-Tns"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egv-aA-u78" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UC4-sW-7ft">
+                    <connections>
+                        <action selector="continue:" destination="L5c-bV-jWC" id="gIv-aR-jwq"/>
+                        <outlet property="delegate" destination="qvS-O3-9Rh" id="s4G-Iy-55l"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Birthday To  -&gt;  600" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIG-CX-J1R">
+                    <rect key="frame" x="0.0" y="0.0" width="560" height="50"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="41"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </objects>
             <point key="canvasLocation" x="-860" y="570"/>
         </scene>
@@ -366,7 +410,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="StarBackground" width="640" height="1137"/>
-        <image name="UtherAvatar" width="200" height="200"/>
+        <image name="StarBackground" width="1200" height="2242"/>
+        <image name="UtherAvatar" width="624" height="664"/>
     </resources>
 </document>

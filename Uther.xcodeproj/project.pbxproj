@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		629A9B4E1BCDF81E002E52BB /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A9B4D1BCDF81E002E52BB /* Shimmer.swift */; settings = {ASSET_TAGS = (); }; };
+		629A9B5B1BCE045B002E52BB /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 629A9B581BCE045B002E52BB /* FBShimmeringLayer.m */; settings = {ASSET_TAGS = (); }; };
+		629A9B5C1BCE045B002E52BB /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 629A9B5A1BCE045B002E52BB /* FBShimmeringView.m */; settings = {ASSET_TAGS = (); }; };
+		629A9B5E1BCE2ED9002E52BB /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629A9B5D1BCE2ED9002E52BB /* Reveal.framework */; settings = {ASSET_TAGS = (); }; };
 		8725B490F806E7F54A6D6D2E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5207ED364F5CBC90B7B58B07 /* Pods.framework */; };
 		961C2E1F1B7B64C400957368 /* UtherDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C2E1E1B7B64C400957368 /* UtherDisplayViewController.swift */; };
 		961C2E231B7B737000957368 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C2E221B7B737000957368 /* MainDataSource.swift */; };
@@ -53,6 +57,14 @@
 
 /* Begin PBXFileReference section */
 		5207ED364F5CBC90B7B58B07 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		629A9B4D1BCDF81E002E52BB /* Shimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
+		629A9B541BCE00FD002E52BB /* Uther-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Uther-Bridging-Header.h"; sourceTree = "<group>"; };
+		629A9B561BCE045B002E52BB /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		629A9B571BCE045B002E52BB /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		629A9B581BCE045B002E52BB /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		629A9B591BCE045B002E52BB /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		629A9B5A1BCE045B002E52BB /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		629A9B5D1BCE2ED9002E52BB /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		698E964CA784577F2D906BDD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6FE5B270A47671D439141E3E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		961C2E1E1B7B64C400957368 /* UtherDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtherDisplayViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +88,6 @@
 		9661EEC01B78DEDE00C9ADD8 /* QCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCloud.swift; sourceTree = "<group>"; };
 		9662C85C1B70D80B000D63B6 /* Emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Emoji.plist; sourceTree = "<group>"; };
 		9677CF961B75F7B700F322FD /* Uther.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uther.swift; sourceTree = "<group>"; };
-		9677CF9B1B76315E00F322FD /* Uther-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Uther-Bridging-Header.h"; sourceTree = "<group>"; };
 		9677CFA01B76382600F322FD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9677CFA41B763F3500F322FD /* Flurry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flurry.swift; sourceTree = "<group>"; };
 		9677CFA61B7645B200F322FD /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
@@ -111,6 +122,7 @@
 			files = (
 				9677CFA11B76382600F322FD /* Security.framework in Frameworks */,
 				967C60281B6C63BE009B1D6E /* SystemConfiguration.framework in Frameworks */,
+				629A9B5E1BCE2ED9002E52BB /* Reveal.framework in Frameworks */,
 				8725B490F806E7F54A6D6D2E /* Pods.framework in Frameworks */,
 				96A4F7791BAC705500C95D48 /* libFlurry_7.1.1.a in Frameworks */,
 			);
@@ -126,6 +138,18 @@
 				6FE5B270A47671D439141E3E /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		629A9B551BCE045B002E52BB /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				629A9B561BCE045B002E52BB /* FBShimmering.h */,
+				629A9B571BCE045B002E52BB /* FBShimmeringLayer.h */,
+				629A9B581BCE045B002E52BB /* FBShimmeringLayer.m */,
+				629A9B591BCE045B002E52BB /* FBShimmeringView.h */,
+				629A9B5A1BCE045B002E52BB /* FBShimmeringView.m */,
+			);
+			path = FBShimmering;
 			sourceTree = "<group>";
 		};
 		961C2E281B7C371B00957368 /* Extension */ = {
@@ -184,7 +208,8 @@
 		967C5F7B1B68EBC4009B1D6E = {
 			isa = PBXGroup;
 			children = (
-				9677CF9B1B76315E00F322FD /* Uther-Bridging-Header.h */,
+				629A9B5D1BCE2ED9002E52BB /* Reveal.framework */,
+				629A9B541BCE00FD002E52BB /* Uther-Bridging-Header.h */,
 				967C5F861B68EBC4009B1D6E /* Uther */,
 				967C60391B6C734D009B1D6E /* Localization */,
 				967C5F851B68EBC4009B1D6E /* Products */,
@@ -262,6 +287,7 @@
 				9677CF961B75F7B700F322FD /* Uther.swift */,
 				9677CFA41B763F3500F322FD /* Flurry.swift */,
 				9677CFA61B7645B200F322FD /* Keychain.swift */,
+				629A9B4D1BCDF81E002E52BB /* Shimmer.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -324,6 +350,7 @@
 		96A4F7751BAC705500C95D48 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				629A9B551BCE045B002E52BB /* FBShimmering */,
 				96A4F7761BAC705500C95D48 /* Flurry.h */,
 				96A4F7771BAC705500C95D48 /* FlurryWatch.h */,
 				96A4F7781BAC705500C95D48 /* libFlurry_7.1.1.a */,
@@ -490,12 +517,14 @@
 				961C2E441B7C371B00957368 /* String+JSON.swift in Sources */,
 				961C2E431B7C371B00957368 /* MoyaProvider+JSON.swift in Sources */,
 				961C2E481B7C7AA100957368 /* HistoryCell.swift in Sources */,
+				629A9B5C1BCE045B002E52BB /* FBShimmeringView.m in Sources */,
 				961C2E401B7C371B00957368 /* UIView+ShortCut.swift in Sources */,
 				961C2E3E1B7C371B00957368 /* UICollectionView+Uther.swift in Sources */,
 				961C2E3A1B7C371B00957368 /* Double+Uther.swift in Sources */,
 				967C600B1B6A6191009B1D6E /* LOG.swift in Sources */,
 				96BF24CA1B75A50F002EDDB8 /* WelcomeViewController.swift in Sources */,
 				9677CFA51B763F3500F322FD /* Flurry.swift in Sources */,
+				629A9B4E1BCDF81E002E52BB /* Shimmer.swift in Sources */,
 				967C5F8A1B68EBC4009B1D6E /* AppDelegate.swift in Sources */,
 				961C2E1F1B7B64C400957368 /* UtherDisplayViewController.swift in Sources */,
 				9677CFA71B7645B200F322FD /* Keychain.swift in Sources */,
@@ -514,6 +543,7 @@
 				961C2E421B7C371B00957368 /* LTMorphingEffect+Uther.swift in Sources */,
 				96BF25041B75AFE8002EDDB8 /* WelcomeTransitionManager.swift in Sources */,
 				967C60051B6A530C009B1D6E /* MainViewController.swift in Sources */,
+				629A9B5B1BCE045B002E52BB /* FBShimmeringLayer.m in Sources */,
 				96BF25061B75D689002EDDB8 /* HistoryTransitionManager.swift in Sources */,
 				961C2E391B7C371B00957368 /* Dictionary+Operator.swift in Sources */,
 			);
@@ -627,6 +657,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Uther/Vendor",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Uther/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -634,6 +665,43 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Uther/Vendor",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Async\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"JSQMessagesViewController\"",
+					"-framework",
+					"\"JSQSystemSoundPlayer\"",
+					"-framework",
+					"\"KeyboardMan\"",
+					"-framework",
+					"\"KeychainAccess\"",
+					"-framework",
+					"\"LTMorphingLabel\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"SQLite\"",
+					"-framework",
+					"\"Shimmer\"",
+					"-framework",
+					"\"SwiftColors\"",
+					"-framework",
+					"\"SwiftDate\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"XCGLogger\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.callmewhy.uther;
@@ -652,6 +720,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Uther/Vendor",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Uther/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -659,6 +728,43 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Uther/Vendor",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Async\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"JSQMessagesViewController\"",
+					"-framework",
+					"\"JSQSystemSoundPlayer\"",
+					"-framework",
+					"\"KeyboardMan\"",
+					"-framework",
+					"\"KeychainAccess\"",
+					"-framework",
+					"\"LTMorphingLabel\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"SQLite\"",
+					"-framework",
+					"\"Shimmer\"",
+					"-framework",
+					"\"SwiftColors\"",
+					"-framework",
+					"\"SwiftDate\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"XCGLogger\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.callmewhy.uther;

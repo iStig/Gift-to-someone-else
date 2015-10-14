@@ -1,13 +1,17 @@
 //
-//  Uther-Bridging-Header.h.h
+//  Uther-Bridging-Header.h
 //  Uther
 //
-//  Created by why on 8/8/15.
-//  Copyright (c) 2015 callmewhy. All rights reserved.
+//  Created by iStig on 15/10/14.
+//  Copyright © 2015年 callmewhy. All rights reserved.
 //
 
-#ifndef Uther_Uther_Bridging_Header_h_h
-#define Uther_Uther_Bridging_Header_h_h
+#ifndef Uther_Bridging_Header_h
+#define Uther_Bridging_Header_h
 
 #import "Flurry.h"
-#endif
+#import "FBShimmering.h"
+#import "FBShimmeringLayer.h"
+#import "FBShimmeringView.h"
+
+#endif /* Uther_Bridging_Header_h */

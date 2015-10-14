@@ -29,7 +29,7 @@ DEPENDENCIES:
     branch `swift-2.0`)
   - LTMorphingLabel
   - Moya
-  - Shimmer (~> 1.0)
+  - Shimmer
   - SQLite.swift (from `https://github.com/stephencelis/SQLite.swift.git`, branch
     `swift-2`)
   - SwiftColors (from `https://github.com/thii/SwiftColors.git`, branch `swift-2.0`)
