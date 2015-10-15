@@ -31,23 +31,20 @@ class WelcomeViewController: UIViewController {
     shimmer.contentView = welcome
     shimmer.shimmering = true
     shimmer.shimmeringPauseDuration = 0.4
-    shimmer.shimmeringAnimationOpacity = 0.5
-    shimmer.shimmeringOpacity = 0.3
-    shimmer.shimmeringSpeed = 230
+    shimmer.shimmeringAnimationOpacity = 1
+    shimmer.shimmeringOpacity = 0.4
+    shimmer.shimmeringSpeed = 300
     shimmer.shimmeringHighlightLength = 1.0
     shimmer.shimmeringDirection = .Right
     shimmer.shimmeringBeginFadeDuration = 0.1
     shimmer.shimmeringEndFadeDuration = 0.3
-    
   }
   
   @IBAction func `continue`(sender: AnyObject) {
     UIView.animateWithDuration(0.3, animations: {finish in
-        self.avatar.hidden = false
     })
     self.performSegueWithIdentifier("show_main", sender: nil)
   }
-  
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     let toViewController = segue.destinationViewController

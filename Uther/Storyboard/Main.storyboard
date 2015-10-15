@@ -201,9 +201,7 @@
                         <constraints>
                             <constraint firstItem="f2b-E2-3Yf" firstAttribute="top" secondItem="4Xt-SE-kV1" secondAttribute="top" constant="100" id="7vc-C9-xSE"/>
                             <constraint firstItem="4Xt-SE-kV1" firstAttribute="top" secondItem="f2b-E2-3Yf" secondAttribute="bottom" constant="-150" id="B0L-EI-MnS"/>
-                            <constraint firstItem="65D-Yo-cIo" firstAttribute="leading" secondItem="4Xt-SE-kV1" secondAttribute="trailing" constant="-120" id="CWn-4J-3bP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="65D-Yo-cIo" secondAttribute="trailing" id="EZD-mI-Wn2"/>
-                            <constraint firstItem="65D-Yo-cIo" firstAttribute="leading" secondItem="4Xt-SE-kV1" secondAttribute="trailing" constant="-120" id="IbV-6I-1rE"/>
                             <constraint firstItem="4Xt-SE-kV1" firstAttribute="top" secondItem="qvS-O3-9Rh" secondAttribute="top" id="Qcm-hU-B92"/>
                             <constraint firstItem="5rW-y2-avJ" firstAttribute="top" secondItem="4Xt-SE-kV1" secondAttribute="bottom" id="VQA-oe-BE3"/>
                             <constraint firstAttribute="trailing" secondItem="4Xt-SE-kV1" secondAttribute="trailing" id="bKM-Yy-z1d"/>
@@ -212,15 +210,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="f2b-E2-3Yf" secondAttribute="trailing" id="lF7-qB-mOT"/>
                             <constraint firstItem="4Xt-SE-kV1" firstAttribute="leading" secondItem="qvS-O3-9Rh" secondAttribute="leading" id="m6t-4c-n17"/>
                             <constraint firstItem="65D-Yo-cIo" firstAttribute="width" secondItem="65D-Yo-cIo" secondAttribute="height" id="pzS-lI-bds"/>
-                            <constraint firstItem="4Xt-SE-kV1" firstAttribute="top" secondItem="65D-Yo-cIo" secondAttribute="bottom" constant="-438" id="xRr-lf-6Fn"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="xRr-lf-6Fn"/>
-                                <exclude reference="CWn-4J-3bP"/>
-                                <exclude reference="IbV-6I-1rE"/>
-                            </mask>
-                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="UC4-sW-7ft" appends="YES" id="AYr-py-6F8"/>
                         </connections>
@@ -241,11 +231,10 @@
                         <outlet property="delegate" destination="qvS-O3-9Rh" id="s4G-Iy-55l"/>
                     </connections>
                 </tapGestureRecognizer>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Birthday To  -&gt;  600" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIG-CX-J1R">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Birthday To     600" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIG-CX-J1R">
                     <rect key="frame" x="0.0" y="0.0" width="560" height="50"/>
                     <animations/>
-                    <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="41"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="45"/>
                     <nil key="highlightedColor"/>
                 </label>
             </objects>

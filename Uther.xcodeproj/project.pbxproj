@@ -10,7 +10,6 @@
 		629A9B4E1BCDF81E002E52BB /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A9B4D1BCDF81E002E52BB /* Shimmer.swift */; settings = {ASSET_TAGS = (); }; };
 		629A9B5B1BCE045B002E52BB /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 629A9B581BCE045B002E52BB /* FBShimmeringLayer.m */; settings = {ASSET_TAGS = (); }; };
 		629A9B5C1BCE045B002E52BB /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 629A9B5A1BCE045B002E52BB /* FBShimmeringView.m */; settings = {ASSET_TAGS = (); }; };
-		629A9B5E1BCE2ED9002E52BB /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629A9B5D1BCE2ED9002E52BB /* Reveal.framework */; settings = {ASSET_TAGS = (); }; };
 		8725B490F806E7F54A6D6D2E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5207ED364F5CBC90B7B58B07 /* Pods.framework */; };
 		961C2E1F1B7B64C400957368 /* UtherDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C2E1E1B7B64C400957368 /* UtherDisplayViewController.swift */; };
 		961C2E231B7B737000957368 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C2E221B7B737000957368 /* MainDataSource.swift */; };
@@ -64,7 +63,6 @@
 		629A9B581BCE045B002E52BB /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
 		629A9B591BCE045B002E52BB /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
 		629A9B5A1BCE045B002E52BB /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
-		629A9B5D1BCE2ED9002E52BB /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		698E964CA784577F2D906BDD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6FE5B270A47671D439141E3E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		961C2E1E1B7B64C400957368 /* UtherDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtherDisplayViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			files = (
 				9677CFA11B76382600F322FD /* Security.framework in Frameworks */,
 				967C60281B6C63BE009B1D6E /* SystemConfiguration.framework in Frameworks */,
-				629A9B5E1BCE2ED9002E52BB /* Reveal.framework in Frameworks */,
 				8725B490F806E7F54A6D6D2E /* Pods.framework in Frameworks */,
 				96A4F7791BAC705500C95D48 /* libFlurry_7.1.1.a in Frameworks */,
 			);
@@ -208,7 +205,6 @@
 		967C5F7B1B68EBC4009B1D6E = {
 			isa = PBXGroup;
 			children = (
-				629A9B5D1BCE2ED9002E52BB /* Reveal.framework */,
 				629A9B541BCE00FD002E52BB /* Uther-Bridging-Header.h */,
 				967C5F861B68EBC4009B1D6E /* Uther */,
 				967C60391B6C734D009B1D6E /* Localization */,
@@ -654,6 +650,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MSH CHINA Enterprise Services Co., Ltd.";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Uther/Vendor",
@@ -698,14 +696,11 @@
 					"\"SwiftyJSON\"",
 					"-framework",
 					"\"XCGLogger\"",
-					"-ObjC",
-					"-lz",
-					"-framework",
-					Reveal,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.callmewhy.uther;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mshpad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eb0aaf3b-2aa7-48c8-8759-267f83043989";
 				SWIFT_OBJC_BRIDGING_HEADER = "Uther-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -717,6 +712,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MSH CHINA Enterprise Services Co., Ltd.";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Uther/Vendor",
@@ -761,14 +758,11 @@
 					"\"SwiftyJSON\"",
 					"-framework",
 					"\"XCGLogger\"",
-					"-ObjC",
-					"-lz",
-					"-framework",
-					Reveal,
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.callmewhy.uther;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mshpad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eb0aaf3b-2aa7-48c8-8759-267f83043989";
 				SWIFT_OBJC_BRIDGING_HEADER = "Uther-Bridging-Header.h";
 			};
 			name = Release;
