@@ -12,7 +12,7 @@ pod 'KeychainAccess', :git => 'https://github.com/kishikawakatsumi/KeychainAcces
 pod 'XCGLogger'
 pod 'SQLite.swift', git: 'https://github.com/stephencelis/SQLite.swift.git', :branch => 'swift-2'
 pod 'SwiftDate', git: 'https://github.com/malcommac/SwiftDate.git', :branch => 'swift-2.0'
-pod 'CryptoSwift'
+pod 'CryptoSwift', '0.0.14'
 pod 'SwiftColors', git: 'https://github.com/thii/SwiftColors.git', :branch => 'swift-2.0'
 pod 'LTMorphingLabel'
 pod 'Moya'

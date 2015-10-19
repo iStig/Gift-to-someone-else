@@ -22,7 +22,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Async (from `https://github.com/duemunk/Async.git`, branch `feature/Swift_2.0`)
-  - CryptoSwift
+  - CryptoSwift (= 0.0.14)
   - JSQMessagesViewController
   - KeyboardMan
   - KeychainAccess (from `https://github.com/kishikawakatsumi/KeychainAccess.git`,
